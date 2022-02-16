@@ -13,9 +13,16 @@ import java.sql.SQLException;
  */
 public class ConexionBD {
 
+	/**
+	 * COMANDOS UTILIZADOS PARA CREAR EL USUARIO:
+	 * 
+	 * CREATE USER 'administrador'@'localhost' IDENTIFIED BY '1234';
+	 * GRANT ALL PRIVILEGES ON empresa.* TO 'administrador';
+	 * FLUSH PRIVILEGES;
+	 */
 	private static final String database = "empresa";
-	private static final String usuario = "root";
-	private static final String contraseña = "123456";
+	private static final String usuario = "administrador";
+	private static final String contraseña = "1234";
 	private static final String url="jdbc:mysql://localhost/"+database;
 	
 	private Connection conexion=null;
